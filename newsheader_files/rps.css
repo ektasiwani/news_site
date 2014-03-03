@@ -1,0 +1,337 @@
+/* rps.css by Bill Weinman http://bw.org/contact/
+  v 1.0 - 2012-07-20
+*/
+
+body {
+    background-color: white;
+}
+
+p {
+    line-height: 1.4;
+    color: black;
+	font-family: Times new roman;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Times new roman;
+    color: black;
+    margin: .25ex 12pt;
+}
+
+h2 {
+    font-size: 130%;
+    color: #840;
+}
+
+a {
+    text-decoration: none;
+    color: #606060 ;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+.clear {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+img.img-right {
+    display: block;
+    float: right;
+    border: solid 2px #555;
+    padding: 2px;
+    margin: 3px 6pt 3px 5px;
+}
+
+/* figure */
+
+figure {
+    border: solid 2px #555;
+    padding: 2px;
+    margin: 3px 5px 3px 12pt;
+    background-color:black;
+}
+
+figure.left {
+    float: left;
+}
+
+figure.right {
+    float: right;
+}
+
+figure img {
+    display: block;
+}
+
+figcaption {
+    font-family: Times new roman;
+    font-size: 75%;
+    text-align: center;
+    padding: 3pt 0;
+}
+
+/* nav */
+
+nav#top-menu {
+    width: 100%;
+    height: 33px;
+    background-color: #B00000;
+    margin: 0;
+    padding: 0;
+}
+
+#top-menu ul {
+    display: block;
+    list-style-type: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#top-menu ul li {
+    margin: 0;
+    padding: 0;
+}
+#top-menu ul li a {
+    display: block;
+    float: left;
+    max-height: 30px;
+    width: 110px;
+    margin: 0;
+    padding: 5px 0;
+    font-family: Times new roman;
+    font-size: 20px;
+    text-align: center;
+    
+    text-decoration: none;
+    color: white;
+   }
+
+#top-menu ul li a:hover { background-color: #700000 ; }
+
+/* header */
+
+header h1 { margin-top: 0; }
+
+header p {
+    font-family: Times new roman;
+    font-size: 85%;
+    margin: .25ex 12pt;
+    color: black;
+}
+
+/* maindiv */
+
+#maindiv {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* article */
+
+section.buy, article {
+    width: 625px;
+    margin-right: 10px;
+    float: left;
+}
+
+article h1 {
+    font-size: 110%;
+    margin-top: 12pt;
+    margin-bottom: 0;
+    padding-top: 3pt;
+    border-top: 4px solid black;
+}
+
+article p {
+    font-family: Times new roman;
+}
+
+article mark {
+    background-color: white;
+}
+
+/* aside */
+
+aside.about {
+    float: right;
+    width: 298px;
+    background-color: WHITE;
+    margin: 3pt 6pt 3pt 6pt;
+    padding: 6pt 0;
+}
+
+aside h1 { font-size: 110%; }
+aside h2 { font-size: 95%; }
+aside p {
+    margin: 0 12pt;
+    font-family: Times new roman;
+    font-size: 80%;
+}
+
+aside section h1 {
+    padding-top: 3pt;
+    border-top: 4px solid black;
+}
+
+aside header p {
+    font-size: 85%;
+}
+
+aside section {
+    padding: 5px 0;
+}
+
+aside a{
+    color:#606060;
+}
+/* footer */
+
+footer {
+    background: #333;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 70%;
+    font-family: Times new roman;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* details */
+
+details summary {
+    font-family: Times new roman;
+    font-size: 110%;
+    color: black;
+    margin: 1ex 12pt;
+}
+
+/* media */
+div#media {
+    margin: 1em 0 0 1em;
+}
+
+/* forms */
+section.buy p {
+    font-family: Times new roman;
+}
+
+input, textarea {
+    font-family: Times new roman;
+    font-size: 1em;
+}
+
+/* RPS game */
+
+section#rpsGame {
+    margin: 1em;
+}
+
+#dnd div {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#dnd footer {
+    
+    font-family: Times new roman;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 0;
+}
+
+p.message, p.error {
+    width: 766px;
+    margin: .5ex 0;
+    font: normal 1em Times new roman;
+    padding: 3px;
+}
+
+p.message {
+    background-color: white;
+    color: black;
+}
+
+/* transitions */
+
+#dnd div {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+
+#dnd div.moving {
+  opacity: 0.25;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+div.menuNormal
+{display: none;
+position: static;}
+
+div.menuHover
+{border: 1px solid WHITE;
+display: inline;
+position: absolute;}
+td.menuHover
+{padding: 1px;
+vertical-align: top;
+/*remove the following line for drop-down menu with images*/
+background-color: #700000;}
+td.menuNormal
+{padding: 0px;
+vertical-align: top;
+}
+h6
+{
+  
+    width: 110px;
+    margin: 0;
+    padding: 3px 0;
+    font-family: Times new roman;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: WHITE;
+   font-weight:bold;
+   }
+div.menuNormal
+{display: none;
+position: static;
+}
+
+div.menuHover
+{
+background-color: white;
+display: inline;
+position: absolute;}
+
+a.menuitem:hover
+{
+text-decoration: none;
+color: black;
+background-color: white;
+display: block;}
+
+a.specialeffects:hover {
+  padding:0px;
+  
+  background-color:white;
+}
+a.specialeffects{
+font-weight:bold;
+}
